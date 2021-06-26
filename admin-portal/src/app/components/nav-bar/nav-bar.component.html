@@ -1,0 +1,11 @@
+<mat-toolbar class="mat-warn">
+  <h3 [style.text-transform]="'uppercase'"><b>Admin Portal</b></h3>
+  <span class="spacer"></span>
+  <div [hidden]="!isLoggedIn">
+    <a mat-button>View Product List</a>
+    <a mat-button>Add Product</a>
+    <a mat-button>Log Out</a>
+  </div>
+</mat-toolbar>
+
+<button mat-raised-button class="mat-warn" (click)="toggle()">Toggle</button>
