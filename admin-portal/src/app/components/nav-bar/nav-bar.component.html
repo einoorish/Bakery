@@ -4,6 +4,6 @@
   <div [hidden]="!isLoggedIn">
     <a mat-button>View Product List</a>
     <a mat-button>Add Product</a>
-    <a mat-button>Log Out</a>
+    <a mat-button (click)="logout()">Log Out</a>
   </div>
 </mat-toolbar>
